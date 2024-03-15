@@ -1,0 +1,15 @@
+from graphics import *
+circ = Circle(Point (100,  100), 30)
+circ.setFill('green')
+c = circ.clone()
+c.setFill('red')
+c.move(50,50)
+win = GraphWin()
+circ.draw(win)
+c.draw(win)
+win.getMouse()
+win.close()
+
+win = GraphWin("click me")
+p = win.getMouse()
+print(p.getX(),p.getY())
